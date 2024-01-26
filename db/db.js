@@ -16,11 +16,11 @@ const disconnect = async () => {
 };
 
 const findUser = async (userObj) => {
-  await User.findOne(userObj);
+  return await User.findOne(userObj).exec();
 };
 
 const createUser = async (newUserObj) => {
-  await User.create(newUserObj);
+  return await User.create(newUserObj);
 };
 
 module.exports = {
