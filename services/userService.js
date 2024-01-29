@@ -47,7 +47,7 @@ module.exports.loginUser = async (req, res, next) => {
       user: resUser,
       logged: true,
       token,
-      message: 'Login Successful,',
+      message: 'Login Successful',
     });
   } catch (error) {
     error.status = 500;
